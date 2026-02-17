@@ -6,11 +6,6 @@
 <title>Felipe Correa | Ingeniería Civil</title>
 
 <style>
-    section:hover{
-    transform: scale(1.02);
-    transition: 0.4s;
-}
-
 *{
     margin:0;
     padding:0;
@@ -19,15 +14,17 @@
 
 body{
     font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:white;
+    background:#f4f6f9;
+    color:#333;
     scroll-behavior:smooth;
 }
 
+/* ===== BANNER AZUL ===== */
 header{
+    background: linear-gradient(135deg,#0d47a1,#1976d2,#42a5f5);
+    color:white;
     text-align:center;
     padding:80px 20px;
-    animation: fadeIn 1.5s ease-in;
 }
 
 header h1{
@@ -37,12 +34,14 @@ header h1{
 
 header p{
     font-size:20px;
-    opacity:0.8;
+    opacity:0.9;
 }
 
+/* ===== NAV ===== */
 nav{
+    background:#1565c0;
     text-align:center;
-    margin-bottom:40px;
+    padding:15px;
 }
 
 nav a{
@@ -54,45 +53,41 @@ nav a{
 }
 
 nav a:hover{
-    color:#00e5ff;
+    color:#ffeb3b;
 }
 
+/* ===== SECCIONES ===== */
 section{
     background:white;
-    color:#333;
     margin:40px auto;
     padding:40px;
     border-radius:15px;
     width:85%;
     max-width:1000px;
-    box-shadow:0px 15px 30px rgba(0,0,0,0.3);
-    animation: slideUp 1s ease;
+    box-shadow:0px 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+section:hover{
+    transform:scale(1.02);
 }
 
 h2{
     margin-bottom:20px;
-    color:#0f3057;
+    color:#0d47a1;
 }
 
 ul{
     margin-left:20px;
+    margin-top:10px;
 }
 
 footer{
     text-align:center;
-    padding:40px;
-    font-size:14px;
-    opacity:0.7;
-}
-
-@keyframes fadeIn{
-    from{opacity:0;}
-    to{opacity:1;}
-}
-
-@keyframes slideUp{
-    from{transform:translateY(40px); opacity:0;}
-    to{transform:translateY(0); opacity:1;}
+    padding:30px;
+    background:#0d47a1;
+    color:white;
+    margin-top:40px;
 }
 </style>
 </head>
@@ -111,6 +106,7 @@ footer{
 <a href="#contacto">Contacto</a>
 </nav>
 
+<!-- PERFIL -->
 <section id="perfil">
 <h2>Perfil Profesional</h2>
 <p>Estudiante de Ingeniería Civil con enfoque en saneamiento ambiental y gestión sostenible de recursos. Interesado en el diseño de soluciones técnicas que integren principios ecológicos y minimicen impactos ambientales.</p>
@@ -121,7 +117,7 @@ footer{
 <li>Factores bióticos y abióticos</li>
 <li>Gestión de agua potable y aguas residuales</li>
 <li>Análisis de ecosistemas</li>
-<li>Aplicación de herramientas de IA en ingeniería</li>
+<li>Aplicación de herramientas de Inteligencia Artificial en ingeniería</li>
 </ul>
 
 <h3>Habilidades Personales</h3>
@@ -133,14 +129,43 @@ footer{
 </ul>
 </section>
 
+<!-- BITÁCORA -->
 <section id="bitacora">
 <h2>Bitácora 1 – Fundamentos de Ecología Aplicados al Saneamiento Ambiental</h2>
 
 <p>En la sesión se analizaron los principios básicos de la ecología como base conceptual del saneamiento ambiental. Se definió el saneamiento como el conjunto de acciones orientadas a proteger la salud humana mediante el control de factores ambientales.</p>
 
-<p>Se estudiaron los componentes del saneamiento: abastecimiento de agua potable, manejo de aguas residuales y gestión de residuos sólidos. También se revisaron los niveles de organización ecológica: organismo, población, c
+<p>Se estudiaron los componentes del saneamiento: abastecimiento de agua potable, manejo de aguas residuales y gestión de residuos sólidos. También se revisaron los niveles de organización ecológica: organismo, población, comunidad, ecosistema y biosfera.</p>
+
+<p>Se explicó el flujo de energía entre productores, consumidores y descomponedores, así como la importancia de los ciclos biogeoquímicos para el equilibrio ambiental.</p>
+
 <h2>Bitácora 2 – Factores Bióticos y Abióticos</h2>
 
-<p>En esta sesión se profundizó en la interacción entre factores bióticos y abióticos dentro de los ecosistemas. Se analizó cómo la temperatura, la disponibilidad de agua y la luz influyen en la distribución de especies.</p>
+<p>En esta sesión se profundizó en la interacción entre factores bióticos (organismos vivos) y abióticos (agua, luz, temperatura y suelo). Se analizó cómo estas variables influyen en la distribución y supervivencia de las especies.</p>
 
-<p>Se destacó la importancia de considerar estas variables en proyectos de ingeniería civil, especialmente en sistemas de saneamiento y planificación territorial.</p>
+<p>Desde la ingeniería civil, comprender estas interacciones permite diseñar proyectos de saneamiento que respeten el entorno natural y promuevan la sostenibilidad.</p>
+</section>
+
+<!-- STACK -->
+<section id="stack">
+<h2>Stack Tecnológico Utilizado</h2>
+<ul>
+<li>ChatGPT – Generación del código HTML y estructura técnica</li>
+<li>GitHub – Control de versiones</li>
+<li>GitHub Pages – Despliegue web gratuito</li>
+</ul>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto">
+<h2>Contacto</h2>
+<p><strong>Email:</strong> felipecorrea@email.com</p>
+<p><strong>Teléfono:</strong> 3197153657</p>
+</section>
+
+<footer>
+<p>© 2026 Felipe Correa | Ingeniería Civil</p>
+</footer>
+
+</body>
+</html>
