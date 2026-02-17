@@ -3,47 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portafolio - Ingeniería Civil</title>
+<title>Felipe Correa | Ingeniería Civil</title>
+
 <style>
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #eef2f3;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-header {
-    background: #0f3057;
-    color: white;
-    padding: 40px;
-    text-align: center;
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+    scroll-behavior:smooth;
 }
 
-nav {
-    background: #00587a;
-    padding: 15px;
-    text-align: center;
+header{
+    text-align:center;
+    padding:80px 20px;
+    animation: fadeIn 1.5s ease-in;
 }
 
-nav a {
-    color: white;
-    margin: 15px;
-    text-decoration: none;
-    font-weight: bold;
+header h1{
+    font-size:48px;
+    margin-bottom:10px;
 }
 
-section {
-    padding: 40px;
-    background: white;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+header p{
+    font-size:20px;
+    opacity:0.8;
 }
 
-footer {
-    background: #0f3057;
-    color: white;
-    text-align: center;
-    padding: 20px;
+nav{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+nav a{
+    color:white;
+    margin:0 15px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00e5ff;
+}
+
+section{
+    background:white;
+    color:#333;
+    margin:40px auto;
+    padding:40px;
+    border-radius:15px;
+    width:85%;
+    max-width:1000px;
+    box-shadow:0px 15px 30px rgba(0,0,0,0.3);
+    animation: slideUp 1s ease;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#0f3057;
+}
+
+ul{
+    margin-left:20px;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    font-size:14px;
+    opacity:0.7;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+@keyframes slideUp{
+    from{transform:translateY(40px); opacity:0;}
+    to{transform:translateY(0); opacity:1;}
 }
 </style>
 </head>
@@ -52,70 +96,41 @@ footer {
 
 <header>
 <h1>Felipe Correa</h1>
-<p>Ingeniería Civil - Saneamiento Ambiental</p>
+<p>Ingeniería Civil | Saneamiento Ambiental | Sostenibilidad</p>
 </header>
 
 <nav>
 <a href="#perfil">Perfil</a>
 <a href="#bitacora">Bitácora</a>
+<a href="#stack">Stack</a>
 <a href="#contacto">Contacto</a>
 </nav>
 
 <section id="perfil">
 <h2>Perfil Profesional</h2>
-
-<p>Estudiante de Ingeniería Civil de la Universidad Católica de Colombia, con enfoque en saneamiento ambiental, gestión de recursos hídricos y sostenibilidad. Interesado en el diseño de soluciones técnicas que integren principios ecológicos y reduzcan impactos ambientales.</p>
+<p>Estudiante de Ingeniería Civil con enfoque en saneamiento ambiental y gestión sostenible de recursos. Interesado en el diseño de soluciones técnicas que integren principios ecológicos y minimicen impactos ambientales.</p>
 
 <h3>Competencias Técnicas</h3>
 <ul>
 <li>Fundamentos de saneamiento ambiental</li>
-<li>Análisis de ecosistemas y factores bióticos/abióticos</li>
+<li>Factores bióticos y abióticos</li>
 <li>Gestión de agua potable y aguas residuales</li>
-<li>Interpretación técnica de conceptos ecológicos</li>
-<li>Uso de herramientas digitales e Inteligencia Artificial</li>
+<li>Análisis de ecosistemas</li>
+<li>Aplicación de herramientas de IA en ingeniería</li>
 </ul>
 
 <h3>Habilidades Personales</h3>
 <ul>
-<li>Responsabilidad y disciplina</li>
+<li>Disciplina y responsabilidad</li>
 <li>Capacidad de análisis</li>
 <li>Trabajo en equipo</li>
 <li>Aprendizaje continuo</li>
 </ul>
 </section>
-<section>
-<h2>Herramientas Utilizadas</h2>
-<ul>
-<li>ChatGPT – Generación de código HTML/CSS</li>
-<li>GitHub – Control de versiones</li>
-<li>GitHub Pages – Despliegue web gratuito</li>
-</ul>
-</section>
-
 
 <section id="bitacora">
 <h2>Bitácora 1 – Fundamentos de Ecología Aplicados al Saneamiento Ambiental</h2>
 
-<p>En la sesión se analizaron los conceptos fundamentales de la ecología como base para la comprensión del saneamiento ambiental. El saneamiento se define como el conjunto de acciones e infraestructuras destinadas a proteger la salud humana mediante el control de factores ambientales que pueden generar riesgo.</p>
+<p>En la sesión se analizaron los principios básicos de la ecología como base conceptual del saneamiento ambiental. Se definió el saneamiento como el conjunto de acciones orientadas a proteger la salud humana mediante el control de factores ambientales.</p>
 
-<p>Se estudiaron los componentes del saneamiento: abastecimiento de agua potable, manejo de aguas residuales, gestión de residuos sólidos y promoción de prácticas higiénicas. La ausencia de estos sistemas incrementa enfermedades y deterioro ambiental.</p>
-
-<p>Desde el enfoque ecológico, se definió el ecosistema como la interacción entre factores bióticos (organismos vivos) y factores abióticos (agua, suelo, luz y temperatura). Se revisaron los niveles de organización ecológica: organismo, población, comunidad, ecosistema y biosfera.</p>
-
-<p>También se abordó el flujo de energía a través de productores, consumidores y descomponedores, así como los ciclos biogeoquímicos que garantizan el equilibrio ambiental.</p>
-
-<p>Finalmente, se resaltó la importancia de integrar principios ecológicos en la ingeniería civil para desarrollar proyectos sostenibles, minimizar impactos ambientales y contribuir al equilibrio de los ecosistemas.</p>
-</section>
-
-
-<section id="contacto">
-<h2>Contacto</h2>
-<p>Email: felipecorrea@email.com</p>
-</section>
-
-<footer>
-<p>© 2026 - Portafolio Ingeniería Civil</p>
-</footer>
-
-</body>
-</html>
+<p>Se estudiaron los componentes del saneamiento: abastecimiento de agua potable, manejo de aguas residuales y gestión de residuos sólidos. También se revisaron los niveles de organización ecológica: organismo, población, c
