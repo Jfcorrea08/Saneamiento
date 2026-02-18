@@ -3,57 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Felipe Correa | Ingeniería Civil</title>
+<title>Saneamiento | Ingeniería Civil</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    font-family: Arial, sans-serif;
 }
 
 body{
-    font-family: 'Segoe UI', sans-serif;
-    background:#f4f6f9;
-    color:#333;
-    scroll-behavior:smooth;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
 }
 
-/* ===== BANNER AZUL ===== */
+/* ===== BANNER ===== */
 header{
-    background: linear-gradient(135deg,#0d47a1,#1976d2,#42a5f5);
+    background:#0d47a1;
     color:white;
     text-align:center;
-    padding:80px 20px;
+    padding:70px 20px;
 }
 
 header h1{
     font-size:48px;
-    margin-bottom:10px;
+    letter-spacing:2px;
 }
 
 header p{
-    font-size:20px;
-    opacity:0.9;
+    margin-top:10px;
+    font-size:18px;
 }
 
-/* ===== NAV ===== */
 nav{
-    background:#1565c0;
-    text-align:center;
-    padding:15px;
+    margin-top:20px;
 }
 
 nav a{
     color:white;
-    margin:0 15px;
     text-decoration:none;
+    margin:0 15px;
     font-weight:bold;
-    transition:0.3s;
 }
 
 nav a:hover{
-    color:#ffeb3b;
+    text-decoration:underline;
 }
 
 /* ===== SECCIONES ===== */
@@ -61,15 +55,9 @@ section{
     background:white;
     margin:40px auto;
     padding:40px;
-    border-radius:15px;
     width:85%;
-    max-width:1000px;
-    box-shadow:0px 10px 25px rgba(0,0,0,0.1);
-    transition:0.4s;
-}
-
-section:hover{
-    transform:scale(1.02);
+    border-radius:15px;
+    box-shadow:0px 10px 25px rgba(0,0,0,0.3);
 }
 
 h2{
@@ -77,17 +65,60 @@ h2{
     color:#0d47a1;
 }
 
-ul{
+h3{
+    margin-top:20px;
+    color:#1565c0;
+}
+
+/* ===== PERFIL ===== */
+.card{
+    background:#f5f7fa;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:30px;
+}
+
+.card ul{
     margin-left:20px;
     margin-top:10px;
 }
 
+/* ===== IMÁGENES ===== */
+.imagenes{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.imagenes img{
+    width:280px;
+    border-radius:10px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.2);
+}
+
+/* ===== STACK ===== */
+.stack ul{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:10px;
+    list-style:none;
+}
+
+.stack li{
+    background:#e3f2fd;
+    padding:10px;
+    border-radius:8px;
+    text-align:center;
+    font-weight:bold;
+}
+
+/* ===== FOOTER ===== */
 footer{
     text-align:center;
-    padding:30px;
-    background:#0d47a1;
+    padding:20px;
     color:white;
-    margin-top:40px;
+    font-size:14px;
 }
 </style>
 </head>
@@ -95,76 +126,123 @@ footer{
 <body>
 
 <header>
-<h1>Felipe Correa</h1>
-<p>Ingeniería Civil | Saneamiento Ambiental | Sostenibilidad</p>
+    <h1>PROYECTO SANEAMIENTO</h1>
+    <p>Ingeniería Civil | Ecología Aplicada | Desarrollo Sostenible</p>
+    <nav>
+        <a href="#perfil">Perfil</a>
+        <a href="#bitacora">Bitácora</a>
+        <a href="#stack">Stack</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
 </header>
 
-<nav>
-<a href="#perfil">Perfil</a>
-<a href="#bitacora">Bitácora</a>
-<a href="#stack">Stack</a>
-<a href="#contacto">Contacto</a>
-</nav>
-
-<!-- PERFIL -->
+<!-- ================= PERFIL ================= -->
 <section id="perfil">
-<h2>Perfil Profesional</h2>
-<p>Estudiante de Ingeniería Civil con enfoque en saneamiento ambiental y gestión sostenible de recursos. Interesado en el diseño de soluciones técnicas que integren principios ecológicos y minimicen impactos ambientales.</p>
+<h2>Equipo de Trabajo</h2>
 
-<h3>Competencias Técnicas</h3>
+<div class="card">
+<h3>Felipe Correa</h3>
+<p>Estudiante de Ingeniería Civil con enfoque en saneamiento ambiental y gestión sostenible de recursos. Interesado en el diseño de soluciones técnicas que integren principios ecológicos, optimicen recursos y minimicen impactos ambientales en proyectos de infraestructura.</p>
+
+<h4>Competencias Técnicas</h4>
 <ul>
 <li>Fundamentos de saneamiento ambiental</li>
-<li>Factores bióticos y abióticos</li>
-<li>Gestión de agua potable y aguas residuales</li>
 <li>Análisis de ecosistemas</li>
-<li>Aplicación de herramientas de Inteligencia Artificial en ingeniería</li>
+<li>Gestión de agua potable y aguas residuales</li>
+<li>Factores bióticos y abióticos</li>
+<li>Aplicación de herramientas digitales e IA</li>
 </ul>
 
-<h3>Habilidades Personales</h3>
+<h4>Habilidades Personales</h4>
 <ul>
 <li>Disciplina y responsabilidad</li>
 <li>Capacidad de análisis</li>
 <li>Trabajo en equipo</li>
 <li>Aprendizaje continuo</li>
 </ul>
+</div>
+
+<div class="card">
+<h3>Santiago Acosta</h3>
+<p>Estudiante de Ingeniería Civil con interés en el saneamiento ambiental y la gestión sostenible de recursos. Motivado por comprender los fundamentos técnicos y aplicarlos en soluciones prácticas que aporten al desarrollo sostenible y al bienestar social.</p>
+
+<h4>Competencias Técnicas</h4>
+<ul>
+<li>Fundamentos de saneamiento ambiental</li>
+<li>Factores bióticos y abióticos en ecosistemas</li>
+<li>Gestión básica de agua potable y aguas residuales</li>
+<li>Análisis e interpretación de datos técnicos</li>
+<li>Herramientas digitales e inteligencia artificial aplicada</li>
+</ul>
+
+<h4>Habilidades Personales</h4>
+<ul>
+<li>Disciplina y responsabilidad académica</li>
+<li>Pensamiento crítico</li>
+<li>Trabajo colaborativo</li>
+<li>Organización y compromiso</li>
+<li>Aprendizaje continuo</li>
+</ul>
+</div>
+
 </section>
 
-<!-- BITÁCORA -->
+<!-- ================= BITÁCORA ================= -->
 <section id="bitacora">
-<h2>Bitácora 1 – Fundamentos de Ecología Aplicados al Saneamiento Ambiental</h2>
+<h2>Bitácora Académica</h2>
 
-<p>En la sesión se analizaron los principios básicos de la ecología como base conceptual del saneamiento ambiental. Se definió el saneamiento como el conjunto de acciones orientadas a proteger la salud humana mediante el control de factores ambientales.</p>
+<h3>1. Fundamentos de Ecología Aplicados al Saneamiento</h3>
+<p>Se analizaron los principios básicos de la ecología como base conceptual del saneamiento ambiental. Se comprendió que un ecosistema está conformado por factores bióticos (seres vivos) y abióticos (agua, suelo, aire, temperatura), cuya interacción determina el equilibrio ambiental.</p>
 
-<p>Se estudiaron los componentes del saneamiento: abastecimiento de agua potable, manejo de aguas residuales y gestión de residuos sólidos. También se revisaron los niveles de organización ecológica: organismo, población, comunidad, ecosistema y biosfera.</p>
+<div class="imagenes">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Ecosystem.jpg" alt="Ecosistema">
+</div>
 
-<p>Se explicó el flujo de energía entre productores, consumidores y descomponedores, así como la importancia de los ciclos biogeoquímicos para el equilibrio ambiental.</p>
+<h3>2. Factores Bióticos y Abióticos</h3>
+<p>Se estudió la influencia de variables físicas como temperatura, luz y disponibilidad de agua en la distribución de especies. Estos conceptos son fundamentales en la planificación de proyectos de saneamiento, ya que permiten anticipar impactos ambientales.</p>
 
-<h2>Bitácora 2 – Factores Bióticos y Abióticos</h2>
+<div class="imagenes">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Water_cycle.png" alt="Ciclo del agua">
+</div>
 
-<p>En esta sesión se profundizó en la interacción entre factores bióticos (organismos vivos) y abióticos (agua, luz, temperatura y suelo). Se analizó cómo estas variables influyen en la distribución y supervivencia de las especies.</p>
+<h3>3. Relación con la Ingeniería Civil</h3>
+<p>El saneamiento ambiental integra conocimientos ecológicos en el diseño de sistemas de abastecimiento de agua potable, tratamiento de aguas residuales y gestión de residuos sólidos, promoviendo soluciones sostenibles.</p>
 
-<p>Desde la ingeniería civil, comprender estas interacciones permite diseñar proyectos de saneamiento que respeten el entorno natural y promuevan la sostenibilidad.</p>
+<div class="imagenes">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Wastewater_Treatment_Plant.jpg" alt="Tratamiento de aguas">
+</div>
+
+<h3>Reflexión Académica</h3>
+<p>El estudio de la ecología aplicada al saneamiento permite comprender que la ingeniería civil no solo construye infraestructura, sino que también contribuye activamente a la protección ambiental y al bienestar social, integrando criterios técnicos y sostenibles en cada proyecto.</p>
+
 </section>
 
-<!-- STACK -->
-<section id="stack">
+<!-- ================= STACK ================= -->
+<section id="stack" class="stack">
 <h2>Stack Tecnológico Utilizado</h2>
 <ul>
-<li>ChatGPT – Generación del código HTML y estructura técnica</li>
-<li>GitHub – Control de versiones</li>
-<li>GitHub Pages – Despliegue web gratuito</li>
+<li>HTML5</li>
+<li>CSS3</li>
+<li>Git & GitHub</li>
+<li>GitHub Pages</li>
+<li>Inteligencia Artificial como apoyo académico</li>
 </ul>
 </section>
 
-<!-- CONTACTO -->
+<!-- ================= CONTACTO ================= -->
 <section id="contacto">
 <h2>Contacto</h2>
-<p><strong>Email:</strong> felipecorrea@email.com</p>
-<p><strong>Teléfono:</strong> 3197153657</p>
+
+<p><strong>Felipe Correa</strong></p>
+<p>📱 3197153657</p>
+
+<p><strong>Santiago Acosta</strong></p>
+<p>📧 Correo institucional pendiente</p>
+
 </section>
 
 <footer>
-<p>© 2026 Felipe Correa | Ingeniería Civil</p>
+© 2026 - Proyecto Académico Saneamiento | Ingeniería Civil
 </footer>
 
 </body>
